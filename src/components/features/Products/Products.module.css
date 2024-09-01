@@ -1,0 +1,132 @@
+.productImg {
+  max-height: 300px;
+  overflow: hidden;
+  border-bottom: 1px solid #ececec;
+}
+
+.productImg img {
+  transform: scale(1.2);
+}
+
+.product .item {
+  border-radius: 5px;
+  display: block;
+  transition: 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid #ececec;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.product > .item:hover,
+.product > .item:focus {
+  box-shadow: 0 0 0 1px var(--main-color), 0 0 30px rgba(0, 80, 13, 0.2);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.buttons button {
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  transition: 0.3s;
+  font-size: 1.25rem;
+}
+
+.buttons .addToCart button {
+  color: #fff;
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  width: 150px;
+  opacity: 0;
+  position: absolute;
+  bottom: -100px;
+}
+
+.addToWish button {
+  color: #000;
+}
+
+ .addedToWish button {
+  color: var(--red);
+}
+
+:is(.addToWish, .addedToWish) button:focus {
+  box-shadow: 0 0 0 transparent !important;
+  border-color: none !important;
+}
+
+.product:hover .buttons .addToCart button {
+  opacity: 1;
+  bottom: 10px;
+}
+
+.text {
+  padding: 0.75rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer svg {
+  color: var(--gold);
+}
+
+.text .footer {
+  margin-top: auto;
+}
+
+.text small {
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.productSlider {
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  padding-bottom: 2rem;
+  height: 100%;
+}
+
+.productSlider :global(.swiper-slide) {
+  max-height: 400px;
+}
+
+.productSlider :global(.swiper-slide) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+}
+
+.productSlider :global(.swiper-pagination) {
+  bottom: 0;
+  min-height: 2.5rem;
+  background-color: rgba(126, 126, 126, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productSlider :global(.swiper-pagination-bullet) {
+  transition: 0.3s;
+}
+.productSlider :global(.swiper-pagination-bullet-active) {
+  background-color: var(--main-color) !important;
+  width: 10px;
+  height: 10px;
+}

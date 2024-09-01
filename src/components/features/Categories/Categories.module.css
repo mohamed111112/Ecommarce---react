@@ -1,0 +1,36 @@
+.categories > div,
+.categoryProducts {
+  margin-top: 3rem;
+  border-radius: 10px;
+  background-color: var(--lighter-gray);
+}
+
+.categories .categoryHover {
+  transition: 0.3s;
+
+}
+.categories .categoryHover:hover {
+  box-shadow: 1px 1px 10px #4fa74f !important ;
+}
+.categories .category .img {
+  flex-grow: 1;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 240px;
+}
+
+.subCategories li a {
+  padding-inline: 0.75rem;
+  padding-block: 0.5rem;
+  display: block;
+  transition: 0.3s;
+}
+
+.subCategories li:not(:last-child) a {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.subCategories li a:hover {
+  background-color: var(--light-main);
+}

@@ -1,0 +1,55 @@
+.form {
+  padding: calc(1rem + 2vw);
+  margin-top: 5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form .inputGroup input {
+  border: 1px solid #555;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.form .forgotInputGroup {
+  flex-direction: column;
+  border: none;
+}
+
+.form .inputGroup label {
+  color: #000;
+  display: block;
+  display: flex;
+}
+
+.form .forgotInputGroup label {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  font-size: 1rem;
+  color: var(--dark-gray);
+  margin-bottom: 1rem;
+}
+
+.form .inputGroup input {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form .forgotInputGroup input {
+  padding: calc(1rem + 0.25vw);
+}

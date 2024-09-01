@@ -1,0 +1,54 @@
+.mainSlider {
+  display: flex;
+  height: 450px;
+  max-width: 400px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainSlider :global(.swiper .swiper-slide) img {
+  width: 150px;
+  object-fit: cover;
+}
+
+@media (max-width: 678px) {
+  .mainSlider {
+    height:auto ;
+  }
+  .images div {
+    height: 100px;
+  }
+}
+
+.categoriesSlider {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+.categoriesSlider :global(.swiper) {
+  padding-bottom: 1rem;
+}
+.categoriesSlider :global(.swiper .swiper-slide) {
+  align-self: stretch;
+}
+
+.categoriesSlider :global(.swiper .swiper-slide) > div {
+  height: 250px;
+  display: flex;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.categoriesSlider :global(.swiper .swiper-slide) > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.categoriesSlider :global(.swiper .swiper-slide) h4 {
+  font-size: calc(0.9rem + 0.5vw) !important;
+  text-align: center;
+  color: var(--dark-gray);
+}

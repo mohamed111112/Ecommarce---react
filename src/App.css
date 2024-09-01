@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans";
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.navbar {
+  background-color: #2c3e50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 999;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  transition: 0.6s;
+}
+.navbar ul a {
+  font-size: 1.1rem;
+}
+.Show {
+  display: none;
+  font-size: 1.4rem;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .Show {
+    display: block;
+  }
+  .navbar ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #2c3e50;
+    align-items: flex-start;
+    padding-left: 15%;
+    height: 0;
+    overflow: hidden;
+  }
+}
+.form-control {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.form-control button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-control button:hover {
+  background-color: #0056b3;
+}
+
+.form-control button:active {
+  background-color: #0088ff;
+}
+
+.portfolio .overlay {
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  background-color: #1abc9ce6;
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.portfolio .card:hover .overlay {
+  display: flex;
+}
+
+.portfolio .card img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.portfolio .img-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  background-color: #2c3e504d;
+  display: none;
+}
+.portfolio .img-overlay img {
+  width: 80%;
+  height: 300px;
+}
