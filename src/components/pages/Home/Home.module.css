@@ -19,6 +19,9 @@
   .images div {
     height: 100px;
   }
+  .images {
+      overflow: hidden;
+  }
 }
 
 .categoriesSlider {

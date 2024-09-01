@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Ecommarce-react/static/css/main.f566df6d.css",
+    "main.js": "/Ecommarce-react/static/js/main.4cd341ed.js",
+    "static/media/slider-image-1.jpeg": "/Ecommarce-react/static/media/slider-image-1.3c3940ee0f1c3b17ff9a.jpeg",
+    "static/media/parmesan-crumbed-chicken-schnitzel-fried-eggs-and-apple-cabbage-slaw-173352-2.jpg": "/Ecommarce-react/static/media/parmesan-crumbed-chicken-schnitzel-fried-eggs-and-apple-cabbage-slaw-173352-2.1b72455a8fc1770c0237.jpg",
+    "static/media/photo-1546069901-ba9599a7e63c.jpg": "/Ecommarce-react/static/media/photo-1546069901-ba9599a7e63c.d3a7de324b645ffee97a.jpg",
+    "static/media/slider-image-3.jpeg": "/Ecommarce-react/static/media/slider-image-3.7e5c9f7a513f6db6dd5e.jpeg",
+    "static/media/slider-image-2.jpeg": "/Ecommarce-react/static/media/slider-image-2.e510b0de8a4d96a1d5ad.jpeg",
+    "static/media/404.webp": "/Ecommarce-react/static/media/404.3ef2b29e5f512fea237a.webp",
+    "static/media/freshcart-logo.svg": "/Ecommarce-react/static/media/freshcart-logo.53f7a424c3aedc30a0fb46dc2278137c.svg",
+    "index.html": "/Ecommarce-react/index.html",
+    "main.f566df6d.css.map": "/Ecommarce-react/static/css/main.f566df6d.css.map",
+    "main.4cd341ed.js.map": "/Ecommarce-react/static/js/main.4cd341ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f566df6d.css",
+    "static/js/main.4cd341ed.js"
+  ]
+}
